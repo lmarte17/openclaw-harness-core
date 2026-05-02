@@ -1,0 +1,7 @@
+{
+  "workflowType": "bugfix",
+  "failed": true,
+  "error": "Same guardrail violation repeated across retries.",
+  "summary": "Use this to verify playbook candidate generation."
+}
+

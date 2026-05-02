@@ -1,0 +1,103 @@
+{
+  "id": "openclaw-harness-core",
+  "name": "OpenClaw Harness Core",
+  "description": "Harness runtime for context architecture, workflows, guardrails, audit, and project bootstrap.",
+  "version": "1.0.0",
+  "kind": "runtime",
+  "uiHints": {
+    "defaultAgentId": {
+      "label": "Default Agent Id",
+      "placeholder": "main",
+      "help": "Fallback persistent owner agent for harness actions."
+    },
+    "projectId": {
+      "label": "Project Id",
+      "placeholder": "default",
+      "help": "Project identifier used for workflow and bootstrap state."
+    },
+    "projectRoot": {
+      "label": "Project Root Override",
+      "placeholder": ".",
+      "help": "Optional project root path relative to the OpenClaw home."
+    },
+    "enableBootstrap": {
+      "label": "Auto Bootstrap",
+      "help": "Create the harness scaffold if required files are missing."
+    },
+    "enableDynamicContext": {
+      "label": "Dynamic Context",
+      "help": "Inject a context packet before supported agent runs."
+    },
+    "enableGuardrails": {
+      "label": "Guardrails",
+      "help": "Check supported tool calls against policy packs."
+    },
+    "enableWriteback": {
+      "label": "Writeback",
+      "help": "Write session state, decisions, and failures durably."
+    },
+    "enableAudit": {
+      "label": "Audit Logging",
+      "help": "Append audit events and policy decisions."
+    },
+    "debug": {
+      "label": "Debug Logging",
+      "help": "Emit verbose plugin logs."
+    }
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "defaultAgentId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "projectId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "projectRoot": {
+        "type": "string",
+        "minLength": 1
+      },
+      "enableBootstrap": {
+        "type": "boolean"
+      },
+      "enableDynamicContext": {
+        "type": "boolean"
+      },
+      "enableGuardrails": {
+        "type": "boolean"
+      },
+      "enableWriteback": {
+        "type": "boolean"
+      },
+      "enableAudit": {
+        "type": "boolean"
+      },
+      "debug": {
+        "type": "boolean"
+      },
+      "contextBudgets": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "total_chars": {
+            "type": "number"
+          },
+          "always_load_ratio": {
+            "type": "number"
+          },
+          "task_load_ratio": {
+            "type": "number"
+          },
+          "artifact_load_ratio": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}
+

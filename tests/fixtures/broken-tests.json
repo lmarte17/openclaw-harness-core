@@ -1,0 +1,11 @@
+{
+  "toolName": "functions.exec_command",
+  "command": "npm test",
+  "paths": [
+    "src/runtime.js",
+    "tests/runtime.test.js"
+  ],
+  "failed": true,
+  "error": "Tests failed with a missing workflow transition handler."
+}
+

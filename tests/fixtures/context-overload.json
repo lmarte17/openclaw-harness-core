@@ -1,0 +1,13 @@
+{
+  "prompt": "Review the harness architecture, docs, workflows, and templates for completeness.",
+  "filePaths": [
+    "ORG.md",
+    "docs/architecture-overview.md",
+    "docs/context-architecture-guide.md",
+    "docs/policy-pack-guide.md",
+    "docs/workflow-authoring-guide.md",
+    "templates/workflows/add_feature.yaml",
+    "templates/workflows/deployment.yaml"
+  ]
+}
+

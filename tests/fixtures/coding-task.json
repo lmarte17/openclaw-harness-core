@@ -1,0 +1,7 @@
+{
+  "templateId": "add_feature",
+  "ownerAgent": "main",
+  "objective": "Add a reusable harness workflow runtime",
+  "summary": "Implement shared workflow creation and stage orchestration."
+}
+

@@ -1,0 +1,10 @@
+{
+  "workflowType": "deployment",
+  "symptom": "Deployment attempt blocked because approval was missing.",
+  "root_cause": "Deployment workflow requires explicit approval.",
+  "guardrail_status": "blocked",
+  "fix_applied": "Create approval request and wait for review.",
+  "prevention_guidance": "Always check approval conditions before deployment transitions.",
+  "confidence": 0.9
+}
+

@@ -1,0 +1,19 @@
+{
+  "workflowId": "fixture-workflow",
+  "targetAgent": "reviewer1",
+  "objective": "Review the implementation changes and verify residual risk.",
+  "scope": [
+    "changed files",
+    "tests",
+    "risk summary"
+  ],
+  "constraints": [
+    "Do not edit protected paths",
+    "Return concrete findings"
+  ],
+  "verificationRequirements": [
+    "file references",
+    "severity labels"
+  ]
+}
+
